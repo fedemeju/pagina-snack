@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   {{>head}}
+  </head>
+  <body>
+    
+     {{>nav}}
+        
+	<section class="home-slider js-fullheight owl-carousel bg-white">
+      <div class="slider-item js-fullheight">
+      	<div class="overlay"></div>
+        <div class="container-fluid p-0">
+          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{{page.ristrel.bg_image}}});">
+          		<div class="overlay"></div>
+          	</div>
+	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+	          	<div class="text mt-md-5">
+		            <h1 class="mb-4">{{{page.ristrel.header}}}</h1>
+		            <p>{{page.ristrel.subtext}}</p>
+		            
+					<p><a href="https://queresto.com/snackbowling" class="btn btn-primary px-4 py-3 mt-3">Ver menú</a></p>
+					
+	            </div>
+	          </div>
+        	</div>
+        </div>
+      </div>
+
+    </section>
+	
+
+		<section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url({{{page.about.bg_image}}}); position: relative"></div>
+					<div class="col-sm-7 wrap-about py-5 ftco-animate">
+	          <div class="heading-section mt-5 mb-4">
+	          	<div class="pl-lg-5 ml-md-5">
+		          	<span class="subheading">About</span>
+		            <h2 class="mb-4">{{page.about.header}}</h2>
+	            </div>
+	          </div>
+	          <div class="pl-lg-5 ml-md-5">
+							<p>{{{page.about.subtext}}}</p>
+							<h3 class="mt-5">Nuestras Instalaciones</h3>
+							<div class="thumb my-4 d-flex">
+                     
+					{{#page.about.images}}
+	            	<a href="{{page.about.dir}}" class="thumb-menu pr-md-4 text-center">
+	            		<div class="img" style="background-image: url({{image}});"></div>
+	            		<h4>{{caption}}</h4>
+	            	</a>
+					{{/page.about.images}}
+
+	        
+
+	            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/snack.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="container">
+    		<div class="row d-md-flex align-items-center justify-content-center">
+    			<div class="col-lg-10">
+    				<div class="row d-md-flex align-items-center">
+		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="54">0</strong>
+		                <span>Años de experiencia</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="25">0</strong>
+		                <span>Juegos Perfectos (300)</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number" data-number="365">0</strong>
+		                <span>Dias al año</span>
+		              </div>
+		            </div>
+		          </div>
+	          </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
+
+
+    <section class="ftco-section testimony-section" style="background-image: url(images/poo.jpg);" data-stellar-background-ratio="0.8">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          	<span class="subheading">Servicios</span>
+            <h2 class="mb-4">Tenemos la mejor solucion para vos</h2>
+          </div>
+        </div>
+             {{#page.service.tipo}}
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url({{imagen}})">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                    <p class="name">{{titulo}}</p>
+                  <div class="text p-3">
+                    <p class="mb-4">{{info}}</p>
+                    <span class="position">+ info</span>
+              {{/page.service.tipo}}
+
+                  </div>
+                </div>
+              </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+			
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container">
+				<div class="row d-flex">
+          <div class="col-md-5 ftco-animate img img-2" style="background-image: url(images/pool.jpg);"></div>
+          <div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
+          	<div class="heading-section ftco-animate mb-5">
+	          	<span class="subheading">Contacto</span>
+	            <h2 class="mb-4">Envianos tu consulta</h2>
+	          </div>
+            <form action="/order" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Nombre</label>
+                    <input name ="name" type="text" class="form-control" placeholder="Tu Nombre">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Mail</label>
+                    <input name = "email" type="text" class="form-control" placeholder="Tu correo">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="">Consulta</label>
+                    <textarea name ="text" class="form-control" rows="8" placeholder="Contamos con que podemos ayudarte..."></textarea>
+                  </div>
+                </div>
+
+
+                </div>
+                <div class="col-md-12 mt-3">
+                  <div class="form-group">
+                    <input type="submit" value="Enviar tu consulta" class="btn btn-primary py-3 px-5">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+			</div>
+		</section>
+
+    {{>footer}}
+    {{>scripts}}
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "ristrel":{   
+        "header":"Ristrel <br> Food House",
+        "subtext":"Conoce nuestra propuesta gastronomica",
+        "bg_image":"/images/bife.jpg"
+        },
+    
+
+    "pool":{
+        "header":"Pool",
+        "subtext":"5 mesas de pool profecionales",
+        "bg_image":"/images/pool.jpg"
+    },
+
+    "bowling":{
+        "header":"Bowling",
+        "subtext":"6 pistas automaticas profecionales",
+        "bg_image":"/images/bowling.jpg"
+    },
+
+    "about":{
+        "header":"Snack Bowling",
+        "subtext":"Desde 1967 brindando los mejores servicios de entretenimiento para toda la familia. Somos un clasico en zona norte con gran experiencia. Tenemos una gran propuesta gastronomica, 6 pistas profecionales de bowling, Pool, pelotero para los mas chicos, estacionamiento propio, entre otras.",
+        "bg_image":"/images/chisu.jpg",
+        "images": [
+
+            {"image":"/images/resto1.jpg","caption":"Restaurante", "dir":"https://queresto.com/snackbowling"},
+            {"image":"/images/bowl1.jpg","caption":"Bowling","dir":"https://queresto.com/snackbowling"},
+            {"image":"/images/pool1.jpg","caption":"Pool","dir":"#"},
+            {"image":"/images/pelotero.jpg","caption":"Pelotero","dir":"#"}
+
+        ]
+    },
+
+    "service":{
+
+        "tipo": [
+            {"imagen":"/images/bowl1.jpg","titulo":"Eventos para empresas", "info":"Contamos con distintas propuestas para eventos coporativos a su medida"},
+            {"imagen":"/images/kids.jpg","titulo":"Cumpleaños infantiles","info":"La opcion mas divertida para los mas chicos!"},
+            {"imagen":"/images/pistas.jpg","titulo":"Cenas de fin de año","info":"La mejor manera de cerrar el año es con nosotros!"}
+        ]
+
+    }
+}
