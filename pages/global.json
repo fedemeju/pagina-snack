@@ -1,0 +1,11 @@
+{
+    "title": "Snack Bowling - Ristrel",
+    "subtext": "Avenida del Libertador 13054  </p> San Isidro - Martinez ",
+    "hours": [
+        {"day":"Lunes a Jueves", "hour":"08:30 - 02:00"},
+        {"day":"Viernes", "hour":"08:30 - 03:00"},
+        {"day":"Sabado", "hour":"08:30 - 03:00"},
+        {"day":"Domingo", "hour":"08:30 - 02:00"}
+    ]
+    
+}
